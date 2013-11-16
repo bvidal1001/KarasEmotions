@@ -21,11 +21,11 @@ if(testing)
 
         //Background Color
         var body = document.body;
-        //body.style.backgroundColor = "#DBFFFF";
+        body.style.backgroundColor = "#DBFFFF";
 		
 		//Background Image
         var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
-		body.style.backgroundImage='url(' + backgroundUrl + ')|none|inherit';
+		body.style.backgroundImage='url(' + backgroundUrl + ')';
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
