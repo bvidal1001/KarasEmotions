@@ -7,11 +7,13 @@
 	var header = document.getElementsByTagName('header')[0];
 	header.style.backgroundColor = "#FFCCFF";
 
+
 	//Background Color
 	var body = document.body;
 	body.style.backgroundColor = "#DBFFFF";
 
+	document.Write(Date());
 	favicon.change("http://ajaxlocal/run/favicon/a.ico");
-	
+	document.Write(Date());
 	
 	
