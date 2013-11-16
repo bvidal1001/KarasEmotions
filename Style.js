@@ -1,7 +1,7 @@
 
 	//Header Text
 	var headerText = document.getElementsByTagName('h1')[0];
-	headerText.innerHTML = "Karas Emotions - (title updated via JavaScript bitch!)";
+	//headerText.innerHTML = "Karas Emotions - (title updated via JavaScript bitch!)";
 
 	//Header Color
 	var header = document.getElementsByTagName('header')[0];
