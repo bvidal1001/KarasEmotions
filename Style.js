@@ -12,8 +12,8 @@
 	var body = document.body;
 	body.style.backgroundColor = "#DBFFFF";
 
-	document.Write(Date());
+	document.Write("asdf");
 	favicon.change("http://ajaxlocal/run/favicon/a.ico");
-	document.Write(Date());
+	document.Write("asdf");
 	
 	
