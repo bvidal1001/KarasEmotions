@@ -26,12 +26,12 @@ if(testing)
 		//Background Image
         var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
 		body.style.backgroundImage='url(' + backgroundUrl + ')';
-		body.style.backgroundAttachment = "fixed";
+		body.style.backgroundAttachment = 'fixed';
 		
 		//Section White-Background
 		var section = body.getElementsByTagName('section')[0];
 		//section.style.backgroundColor = "#FFFFFF"; //White
-		section.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'; //Transparent
+		section.style.backgroundColor = 'rgba(255, 255, 255, 0.7)'; //Transparent
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
