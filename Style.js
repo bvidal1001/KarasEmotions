@@ -35,10 +35,9 @@ if(testing)
 		
 		//Section White-Background
 		var section = body.getElementsByTagName('section')[0];
-		//section.style.backgroundColor = "#FFFFFF"; //White
-		
 		section.style.backgroundColor = transparentWhite;
-
+		section.style.padding = '3px';
+		
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
         var footText = footer.getElementsByTagName('p')[0];
