@@ -1,6 +1,6 @@
 
 	//Header Text
-	var headerText = document.getElementsByTagName('h1')[0];
+	//var headerText = document.getElementsByTagName('h1')[0];
 	//headerText.innerHTML = "Karas Emotions - (title updated via JavaScript bitch!)";
 
 	//Header Color
