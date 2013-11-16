@@ -5,6 +5,11 @@ if(testing)
 //alert('finish');
 }
 
+//GLOBAL
+	var transparentWhite = 'rgba(255, 255, 255, 0.8)';
+
+
+
 //HEAD
         var head = document.getElementsByTagName('head')[0];
 
@@ -17,7 +22,7 @@ if(testing)
 //BODY
         //Header Color
         var header = document.getElementsByTagName('header')[0];
-        header.style.backgroundColor = "#FFFFFF";
+        header.style.backgroundColor = transparentWhite;
 
         //Background Color
         var body = document.body;
@@ -31,7 +36,8 @@ if(testing)
 		//Section White-Background
 		var section = body.getElementsByTagName('section')[0];
 		//section.style.backgroundColor = "#FFFFFF"; //White
-		section.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; //Transparent
+		
+		section.style.backgroundColor = transparentWhite;
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
