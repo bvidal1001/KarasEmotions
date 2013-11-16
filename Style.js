@@ -30,7 +30,7 @@ if(testing)
 		
 		//Background Image
         var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
-		body.style.backgroundImage='url(' + backgroundUrl + ')';
+		body.style.backgroundImage='url(' + backgroundUrl + ')no-repeat center center fixed';
 		body.style.backgroundAttachment = 'fixed';
 		
 		//Section White-Background
