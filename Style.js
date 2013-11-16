@@ -5,7 +5,7 @@ if(testing)
 	// Format: <link rel="shortcut icon" href="/favicon.ico" />
 	//alert('start');
 	
-	var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/favicon.ico";
+	var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/faviconTry.ico";
 	var favUrlGoogle = "http://www.google.com/favicon.ico";
 		
 	var head = document.getElementsByTagName('head')[0];
