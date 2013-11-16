@@ -10,21 +10,19 @@ if(testing)
 	var transparentWhite = 'rgba(255, 255, 255, 0.8)';
 
 
-//INCLUDE CSS
-	var cssFile = gitHubDestination + "StyleAll.css";
-	
-	var head = document.getElementsByTagName('head')[0];
-			var shortcutIconLink = document.createElement('link');
-					var attRel = document.createAttribute('rel');
-					attRel.value = "stylesheet";
-					var attHref = document.createAttribute('href');
-					attHref.value = cssFile;
-			shortcutIconLink.setAttributeNode(attRel);
-			shortcutIconLink.setAttributeNode(attHref);
-	head.appendChild(shortcutIconLink);
-
 //HEAD
-        var head = document.getElementsByTagName('head')[0];
+	//INCLUDE CSS
+		var cssFile = gitHubDestination + "StyleAll.css";
+		
+		var head = document.getElementsByTagName('head')[0];
+				var shortcutIconLink = document.createElement('link');
+						var attRel = document.createAttribute('rel');
+						attRel.value = "stylesheet";
+						var attHref = document.createAttribute('href');
+						attHref.value = cssFile;
+				shortcutIconLink.setAttributeNode(attRel);
+				shortcutIconLink.setAttributeNode(attHref);
+		head.appendChild(shortcutIconLink);
 
         //Header Text
         var kMain = gitHubDestination + "kMain.png";
