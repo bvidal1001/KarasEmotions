@@ -1,16 +1,25 @@
-
-
-var testing = false;
+var testing = true;
 if(testing)
 {
-	alert('start');
+	
+	// Format: <link rel="shortcut icon" href="/favicon.ico" />
+	//alert('start');
+	
+	var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/favicon.ico";
+	var favUrlGoogle = "http://www.google.com/favicon.ico";
 		
-		var linkElement = document.createElement('link');
-		var att = document.createAttribute('shortcut icon');
-		att.value = "http://ajaxlocal/run/favicon/a.ico";
-		linkElement.setAttributeNode(att);
-		
-	alert('finish');
+	var head = document.getElementsByTagName('head')[0];
+		var shortcutIconLink = document.createElement('link');
+			var attRel = document.createAttribute('rel');
+			attRel.value = "shortcut icon";
+	
+			var attHref = document.createAttribute('href');
+			attHref.value = favUrl;
+		shortcutIconLink.setAttributeNode(attRel);
+		shortcutIconLink.setAttributeNode(attHref);
+	head.appendChild(shortcutIconLink);
+
+	//alert('finish');
 }
 	
 	var head = document.getElementsByTagName('head')[0];
