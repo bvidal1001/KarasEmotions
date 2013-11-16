@@ -6,15 +6,28 @@ if(testing)
 }
 
 //GLOBAL
+	var gitHubDestination = "https://raw.github.com/bvidal1001/KarasEmotions/master/";
 	var transparentWhite = 'rgba(255, 255, 255, 0.8)';
 
 
+//INCLUDE CSS
+	var cssFile = gitHubDestination + "StyleAll.css";
+	
+	var head = document.getElementsByTagName('head')[0];
+			var shortcutIconLink = document.createElement('link');
+					var attRel = document.createAttribute('rel');
+					attRel.value = "stylesheet";
+					var attHref = document.createAttribute('href');
+					attHref.value = cssFile;
+			shortcutIconLink.setAttributeNode(attRel);
+			shortcutIconLink.setAttributeNode(attHref);
+	head.appendChild(shortcutIconLink);
 
 //HEAD
         var head = document.getElementsByTagName('head')[0];
 
         //Header Text
-        var kMain = "https://raw.github.com/bvidal1001/KarasEmotions/master/kMain.png";
+        var kMain = gitHubDestination + "kMain.png";
         var h1 = document.getElementsByTagName('h1')[0];
                 var titleImg = h1.getElementsByTagName('img')[0];
                 titleImg.setAttribute('src',kMain);
@@ -29,7 +42,7 @@ if(testing)
         body.style.backgroundColor = "#DBFFFF";
 		
 		//Background Image
-        var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
+        var backgroundUrl = gitHubDestination + "texture.jpg";
 		body.style.backgroundImage='url(' + backgroundUrl + ')';
 		body.style.backgroundAttachment = 'fixed';
 		
@@ -48,7 +61,7 @@ if(testing)
         footText.innerHTML = "Site created/edited/hacked by " + bradLink;
 
 //FAVICON
-        var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/faviconTry.ico";
+        var favUrl = gitHubDestination + "faviconTry.ico";
         
         var head = document.getElementsByTagName('head')[0];
                 var shortcutIconLink = document.createElement('link');
