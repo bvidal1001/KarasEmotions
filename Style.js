@@ -26,6 +26,7 @@ if(testing)
 		//Background Image
         var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
 		body.style.backgroundImage='url(' + backgroundUrl + ')';
+		body.style.backgroundAttachment = "fixed";
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
