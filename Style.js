@@ -1,41 +1,45 @@
-var testing = true;
+var testing = false;
 if(testing)
 {
-	
-	// Format: <link rel="shortcut icon" href="/favicon.ico" />
-	//alert('start');
-	
-	var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/faviconTry.ico";
-	var favUrlGoogle = "http://www.google.com/favicon.ico";
-		
-	var head = document.getElementsByTagName('head')[0];
-		var shortcutIconLink = document.createElement('link');
-			var attRel = document.createAttribute('rel');
-			attRel.value = "shortcut icon";
-	
-			var attHref = document.createAttribute('href');
-			attHref.value = favUrl;
-		shortcutIconLink.setAttributeNode(attRel);
-		shortcutIconLink.setAttributeNode(attHref);
-	head.appendChild(shortcutIconLink);
-
-	//alert('finish');
+//alert('start');
+//alert('finish');
 }
-	
-	var head = document.getElementsByTagName('head')[0];
-	head.appendChild(linkElement);
 
+//HEAD
+        var head = document.getElementsByTagName('head')[0];
 
-	//Header Text
-	//var headerText = document.getElementsByTagName('h1')[0];
-	//headerText.innerHTML = "Karas Emotions - (title updated via JavaScript bitch!)";
+        //Header Text
+        var kMain = "https://raw.github.com/bvidal1001/KarasEmotions/master/kMain.png";
+        var h1 = document.getElementsByTagName('h1')[0];
+                var titleImg = h1.getElementsByTagName('img')[0];
+                titleImg.setAttribute('src',kMain);
 
-	//Header Color
-	var header = document.getElementsByTagName('header')[0];
-	header.style.backgroundColor = "#FFCCFF";
+//BODY
+        //Header Color
+        var header = document.getElementsByTagName('header')[0];
+        //header.style.backgroundColor = "#FFCCFF";
 
+        //Background Color
+        var body = document.body;
+        //body.style.backgroundColor = "#DBFFFF";
 
-	//Background Color
-	var body = document.body;
-	body.style.backgroundColor = "#DBFFFF";
+        //Footer
+        var footer = body.getElementsByTagName('footer')[0];
+        var footText = footer.getElementsByTagName('p')[0];
+        var bradLink = "<a href='https://www.facebook.com/brad.vidal' >Brad</a>";
+        footText.innerHTML = "Site created/edited/hacked by " + bradLink;
 
+//FAVICON
+        var favUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/faviconTry.ico";
+        
+        var head = document.getElementsByTagName('head')[0];
+                var shortcutIconLink = document.createElement('link');
+                        var attRel = document.createAttribute('rel');
+                        attRel.value = "shortcut icon";
+        
+                        var attHref = document.createAttribute('href');
+                        attHref.value = favUrl;
+                shortcutIconLink.setAttributeNode(attRel);
+                shortcutIconLink.setAttributeNode(attHref);
+        head.appendChild(shortcutIconLink);
+        
