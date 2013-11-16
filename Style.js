@@ -11,6 +11,7 @@
 	var body = document.body;
 	body.style.backgroundColor = "#DBFFFF";
 
+	favicon.change("http://ajaxlocal/run/favicon/a.ico");
 	
 	
 	
