@@ -1,9 +1,17 @@
 
-	
-	var linkElement = document.createElement('link');
-	var att = document.createAttribute('shortcut icon');
-	att.value = "http://ajaxlocal/run/favicon/a.ico";
-	linkElement.setAttributeNode(att);
+
+var testing = false;
+if(testing)
+{
+	alert('start');
+		
+		var linkElement = document.createElement('link');
+		var att = document.createAttribute('shortcut icon');
+		att.value = "http://ajaxlocal/run/favicon/a.ico";
+		linkElement.setAttributeNode(att);
+		
+	alert('finish');
+}
 	
 	var head = document.getElementsByTagName('head')[0];
 	head.appendChild(linkElement);
@@ -22,5 +30,3 @@
 	var body = document.body;
 	body.style.backgroundColor = "#DBFFFF";
 
-	
-	
