@@ -30,7 +30,8 @@ if(testing)
 		
 		//Section White-Background
 		var section = body.getElementsByTagName('section')[0];
-		section.style.backgroundColor = "#FFFFFF";
+		//section.style.backgroundColor = "#FFFFFF"; //White
+		section.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'; //Transparent
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
