@@ -17,7 +17,7 @@ if(testing)
 //BODY
         //Header Color
         var header = document.getElementsByTagName('header')[0];
-        //header.style.backgroundColor = "#FFCCFF";
+        header.style.backgroundColor = "#FFFFFF";
 
         //Background Color
         var body = document.body;
@@ -27,6 +27,10 @@ if(testing)
         var backgroundUrl = "https://raw.github.com/bvidal1001/KarasEmotions/master/texture.jpg";
 		body.style.backgroundImage='url(' + backgroundUrl + ')';
 		body.style.backgroundAttachment = "fixed";
+		
+		//Section White-Background
+		var section = body.getElementsByTagName('section')[0];
+		section.style.backgroundColor = "#FFFFFF";
 
         //Footer
         var footer = body.getElementsByTagName('footer')[0];
